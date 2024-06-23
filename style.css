@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Hahmlet', serif;
+}
+#menu{ height: 46px; position: sticky; top:0px; border-bottom: 1px solid rgb(255, 0, 0); }
+#menu ul{display: flex; justify-content: space-evenly; align-items: center; padding: 0px;}
+#menu ul li{list-style: none; padding: 10px 10px; user-select: none;}
+#menu ul li:hover{color:white; background-color: rgb(255, 0, 0);}
+
+
+#mainContainer{
+    width: 1420px;
+    margin: 0 auto;
+    padding-top: 60px; 
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000; 
+    padding: 10px 20px; 
+    border-bottom: 0.5px solid white; 
+}
+
+nav .logo {
+    height: 80px;
+ }
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width : 400px;
+}
+    
+nav ul li{list-style: none;   
+    font-weight: 600 !important;
+
+    font-size: 17px; 
+    margin-left: 50px; 
+    padding-bottom: 20px;}
+
+
+.row{display:flex; position: relative;  } 
+
+.col6{width: 100%; padding: 0px 10px;}
+.col5{width: 83.33%; padding: 0px 10px;}
+.col4{width: 66.66%; padding: 0px 10px;}
+.col3{width: 50%; padding: 0px 10px;}
+.col2{width: 33.33%; padding: 0px 10px;}
+.col1{width: 16.66%; padding: 0px 10px;}
+
+.h90{height: 90px;}
+
+.h130{height: 130px;}
+
+.h300{margin: 210px; }
+
+.logo-container {
+    position:absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    height: 500px;
+    width: 720px;  z-index: 999; }
+
+.logo-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.3s ease; 
+}
+
+.logo-container .image-hover { opacity: 0;}
+
+.logo-container:hover .image-hover { opacity: 1; }
+
+.logo-container:hover .image-default { opacity: 0; }
+
+.text-container{
+    text-align: center;
+    margin-top: 425px; 
+}
+
+
+.logo-text {
+    color: white;}
+.logo-text3::selection { color: rgb(255, 255, 255);  background-color: rgb(255, 0, 0); }
+
+.additional-text-container {
+    text-align: center;
+    margin-top: 80px; /* Space between text containers */
+    padding: 0 55px; 
+}
+
+.logo-text2 {
+    color: white;
+    font-size: 14px;
+    margin: 20px;
+    text-align:left;
+
+}
+.logo-text2::selection { color: rgb(255, 255, 255);  background-color: rgb(255, 0, 0); }
+.logo-text3 {
+    color: white;
+    font-size: 45px;
+    font-weight: 600 !important;
+    margin-left: 150px;
+    text-align:left;
+    line-height: 1.5;
+
+}  
+.logo-text3::selection { color: rgb(255, 255, 255);  background-color: rgb(255, 0, 0); }
+
+.logo-text4 {
+    font-size: 40px;
+    font-weight: 600 !important;
+    margin-left: 300px;
+    text-align:left;
+    line-height: 1.5;
+    margin-bottom: 20px; 
+    margin-top: 60px; 
+}
+.logo-text4::selection { color: rgb(255, 255, 255);  background-color: rgb(255, 0, 0); }
+.logo-text5 {
+    margin-left: 300px;
+    margin-right:  90px;
+    text-align:left;
+    line-height: 1.8;
+    
+}
+.logo-text5::selection { color: rgb(255, 255, 255);  background-color: rgb(255, 0, 0); }
+
+ .backgroundBox {
+    display: flex;
+    height: 9300px; /* 필요한 높이로 조정 */
+    background-color: #000000; /* 박스 색상 */
+    margin: 100px 0; /* 위아래 여백 */
+    position: relative;
+    z-index: 0;
+    overflow: hidden; /* 박스 내부에서 스크롤 이미지가 보이도록 설정 */
+}
+
+.backgroundBox .vertical-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: white;
+}
+
+.backgroundBox .scrollImage {
+    position:fixed; /* 배경 박스 내부에서 스ㅣ롤 */
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 500px; /* 원하는 크기로 조정 */
+    height: 300px; /* 원하는 크기로 조정 */
+    z-index: 1001;
+}
+
+.backgroundBox .mainimage {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+
+    }
+   
+.mainimage img {
+        margin-bottom: 600px; 
+        margin-left: 190px;
+        width: 300px; }
+          
+.wiper-track {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.5rem;
+    margin: 0 auto;
+    transition: transform 0.4s ease-in;
+    padding: 0 1rem;
+  }
+  .wiper-item {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    transition: scale 0.2s linear;
+  
+  }
+  .wiper-button img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+  }
+  .wiper {
+    max-width: 960px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .active-swipe {
+    transform: scale(1.1);
+  }
+  .wiper-button {
+    margin: 0 1rem;
+    height: 70px;
+    width: 45px;
+    position: absolute;
+    top: 50%;
+    background: transparent;
+    border: none;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  .wiper-button__left {
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
+  }
+  .wiper__image-button {
+    right: 50%;
+    top: 50%;
+    position: absolute;
+    padding: 0.8rem 1rem;
+    border-radius: 3px;
+    background-color: white;
+    border: none;
+    font-size: 1.4rem;
+    transform: translateY(-50%) translateX(50%);
+    cursor: pointer;
+  }
+  .wiper-wrapper {
+    max-width: 660px;
+    overflow: hidden;
+    padding: 2rem 0.5rem;
+    margin: 0 auto;
+  }
+  .swiper__image-button {
+    right: 50%;
+    top: 50%;
+    position: absolute;
+    padding: 0.8rem 1rem;
+    border-radius: 3px;
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    transform: translateY(-50%) translateX(50%);
+    cursor: pointer;
+  }
+  .swiper__image-button:hover {
+    color: red;
+  }
+  .wiper__image{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius:30px;
+  }
+  .is-hidden{
+    display:none;
+  }
